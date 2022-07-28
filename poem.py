@@ -1,8 +1,8 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
+# -*- coding:utf-8 -*-
 
 from itertools import count
 from random import randrange
+
 
 def progcess(res, words4, keystring):
 
@@ -26,11 +26,15 @@ def progcess(res, words4, keystring):
 
 def generalSytx(repeatCount, sytx1, words4, words2):
 
+    print('\n')
+
     for i in range(repeatCount):
         res = sytx1[randrange(len(sytx1))]
         res = progcess(res, words4, '4444')
         res = progcess(res, words2, '22')
-        print('\n', res, '\n')
+        print(res)
+
+    print('\n')
 
 
 def main():
